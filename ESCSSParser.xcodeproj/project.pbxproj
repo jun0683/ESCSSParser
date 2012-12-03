@@ -20,6 +20,7 @@
 		B1716C9216512ABB00AC53B3 /* ESCSSParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */; };
 		D34EC8F2166C936000083C32 /* test1.css in Resources */ = {isa = PBXBuildFile; fileRef = D34EC8F1166C936000083C32 /* test1.css */; };
 		D39AE864166C869C0028BBDD /* KakaoTalk.css in Resources */ = {isa = PBXBuildFile; fileRef = D39AE863166C869C0028BBDD /* KakaoTalk.css */; };
+		D3D4D27C166D1B70006CA41E /* KakaoCSSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4D27B166D1B70006CA41E /* KakaoCSSProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ESCSSParser.mm; sourceTree = "<group>"; };
 		D34EC8F1166C936000083C32 /* test1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = test1.css; sourceTree = "<group>"; };
 		D39AE863166C869C0028BBDD /* KakaoTalk.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = KakaoTalk.css; sourceTree = "<group>"; };
+		D3D4D27A166D1B70006CA41E /* KakaoCSSProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakaoCSSProperty.h; sourceTree = "<group>"; };
+		D3D4D27B166D1B70006CA41E /* KakaoCSSProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakaoCSSProperty.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				B1716C7D1651280300AC53B3 /* ESAppDelegate.m */,
 				B1716C9016512ABB00AC53B3 /* ESCSSParser.h */,
 				B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */,
+				D3D4D27A166D1B70006CA41E /* KakaoCSSProperty.h */,
+				D3D4D27B166D1B70006CA41E /* KakaoCSSProperty.m */,
 				B1716C741651280300AC53B3 /* Supporting Files */,
 			);
 			path = ESCSSParser;
@@ -185,6 +190,7 @@
 				B1716C7A1651280300AC53B3 /* main.m in Sources */,
 				B1716C7E1651280300AC53B3 /* ESAppDelegate.m in Sources */,
 				B1716C9216512ABB00AC53B3 /* ESCSSParser.mm in Sources */,
+				D3D4D27C166D1B70006CA41E /* KakaoCSSProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

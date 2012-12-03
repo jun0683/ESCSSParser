@@ -8,6 +8,7 @@
 
 #import "ESAppDelegate.h"
 #import "ESCSSParser.h"
+#import "KakaoCSSProperty.h"
 
 @implementation ESAppDelegate
 
@@ -21,8 +22,20 @@
     NSString *cssText = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     
     NSDictionary *styleSheet = [ESCSSParser parse:cssText];
-    NSLog(@"styleSheet:%@",styleSheet);
-    NSLog(@"%@",[styleSheet objectForKey:@"TableViewCellStyle1-1"]);
+    
+    for (id key1 in styleSheet)
+    {
+        NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+        for (id key2 in [styleSheet objectForKey:key1])
+        {
+            [dic setValue:[KakaoCSSProperty parseValue:key2 property:[[styleSheet objectForKey:key1] objectForKey:key2]] forKey:key2];
+            
+        }
+        
+        NSLog(@"%@",dic);
+        NSLog(@"%@",[styleSheet objectForKey:key1]);
+    }
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
