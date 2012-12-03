@@ -197,11 +197,15 @@ static NSString* stringForm(string string){
     return [NSString stringWithCString:string.c_str() encoding:NSUTF8StringEncoding];
 }
 
+static bool isComment(string& css_input, int i)
+{
+    return css_input[i] == '/' && s_at(css_input,i+1) == '*';
+}
 
 #pragma mark - -- ESCSSParser implementation --
 @implementation ESCSSParser
 
-- (NSDictionary *)parse:(NSString *)cssText{
++ (NSDictionary *)parse:(NSString *)cssText{
     if (cssText == nil) return nil;
     
     NSMutableDictionary *styleSheet = [[NSMutableDictionary alloc] init];
@@ -231,7 +235,7 @@ static NSString* stringForm(string string){
 			case in_selector:
                 if(is_token(css_input,i))
                 {
-                    if(css_input[i] == '/' && s_at(css_input,i+1) == '*' && trim(cur_selector) == "")
+                    if(isComment(css_input, i) /* && trim(cur_selector) == "" */)
                     {
                         status = in_comment; ++i;
                         from = in_selector;
@@ -254,7 +258,7 @@ static NSString* stringForm(string string){
                         cur_selector = trim(cur_selector);
                         cur_selector = trimspaces(cur_selector);
                         
-                        properties = [[[NSMutableDictionary alloc] init] autorelease];
+                        properties = [[NSMutableDictionary alloc] init];
                     }
                     else if(css_input[i] == '}')
                     {
@@ -303,7 +307,7 @@ static NSString* stringForm(string string){
                     {
                         status = in_value;
                     }
-                    else if(css_input[i] == '/' && s_at(css_input,i+1) == '*' && cur_property == "")
+                    else if(isComment(css_input, i) && cur_property == "")
                     {
                         status = in_comment; ++i;
                         from = in_property;
@@ -444,7 +448,7 @@ static NSString* stringForm(string string){
                 if (css_input[i] == '{') {
                     status = in_selector;
                     in_keyframes = true;
-                    keyframeRule = [[[NSMutableDictionary alloc] init] autorelease];
+                    keyframeRule = [[NSMutableDictionary alloc] init];
                     
                 }else if(css_input[i] == ';'){
                     status = in_selector;
@@ -469,7 +473,7 @@ static NSString* stringForm(string string){
                 break;
 		}
 	}    
-    return [styleSheet autorelease];
+    return styleSheet;
 }
 
 

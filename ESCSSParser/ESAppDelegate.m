@@ -11,24 +11,18 @@
 
 @implementation ESAppDelegate
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"css"];
-    NSString *cssText = [[[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] autorelease];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"KakaoTalk" ofType:@"css"];
+    NSString *cssText = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     
-    ESCSSParser *parser = [[[ESCSSParser alloc] init] autorelease];
-    NSDictionary *styleSheet = [parser parse:cssText];
+    NSDictionary *styleSheet = [ESCSSParser parse:cssText];
     NSLog(@"styleSheet:%@",styleSheet);
-    
+    NSLog(@"%@",[styleSheet objectForKey:@"TableViewCellStyle1-1"]);
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

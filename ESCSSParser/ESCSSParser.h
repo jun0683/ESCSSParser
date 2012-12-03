@@ -8,6 +8,6 @@
 
 @interface ESCSSParser : NSObject{}
 
-- (NSDictionary *)parse:(NSString *)cssText;
++ (NSDictionary *)parse:(NSString *)cssText;
 
 @end

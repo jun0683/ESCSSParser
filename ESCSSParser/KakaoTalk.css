@@ -1,0 +1,420 @@
+/*
+    Manifest
+*/
+
+ManifestStyle
+{ 
+    -kakaotalk-theme-name: url('Space Theme');
+    -kakaotalk-theme-version: url('1.0.0');
+    -kakaotalk-theme-url: url('http://www.kakao.com');
+    -kakaotalk-author-name: url('Kakao Corp.');
+}
+
+/*
+	Background
+*/
+
+BackgroundStyle3 /* Friend List */
+{
+    background-color: #f6f6f6; 
+}
+
+BackgroundStyle4 /* Chat List */
+{
+    background-color: #f6f6f6; 
+}
+
+BackgroundStyle5 /* Chat Room */
+{
+		-ios-background-image: url('bg_chatroom.png') 0px 0px;
+}
+
+BackgroundStyle6 /* Recommendee */
+{
+    background-color: #f6f6f6; 
+}
+
+
+
+/*
+	Button
+*/
+
+/* 네비게이션바 상단 왼쪽 버튼 */
+ButtonStyle6-1
+{
+    -ios-background-image: url('btn_back.png');
+    -ios-text-color: #ffffff;
+    -ios-text-shadow-offset: 0px -1px;
+    -ios-text-shadow-color: #000000;
+    -ios-text-shadow-alpha: 0.4;
+}
+
+/* 네비게이션바 상단 오른쪽 버튼 */
+ButtonStyle7-1
+{
+	-ios-background-image: url('btn_n.png');
+    -ios-text-color: #ffffff;
+    -ios-text-shadow-offset: 0px -1px;
+	-ios-text-shadow-color: #000000;
+    -ios-text-shadow-alpha: 0.4;
+}
+
+ButtonStyle7-2
+{
+    -ios-background-image: url('btn_n.png');
+    -ios-text-color: #ffffff;
+    -ios-text-alpha: 0.2;v
+    -ios-text-shadow-offset: 0px -1px;
+    -ios-text-shadow-color: #000000;
+    -ios-text-shadow-alpha: 0.1;
+}
+
+ButtonStyle7-3
+{
+    -ios-background-image: url('btn_enable.png');
+    -ios-text-color: #000;
+    -ios-text-alpha: 1.0;
+    -ios-text-shadow-offset: 0px 1px;
+    -ios-text-shadow-color: #ffffff;
+    -ios-text-shadow-alpha: 0.5;
+}
+
+
+SearchBarStyle1
+{
+    -ios-text-color: #000000;
+    -ios-background-image: url('bg_searchbar.png');
+    -ios-searchbar-textfield-background-image: url('input_search.png');
+    -ios-searchbar-textfield-leftview-image: url('ico_search.png');    
+}
+
+TableViewCellStyle1-1 /* Friend */
+{
+	border-color: #d4d4cd;
+	-ios-normal-background-color: #f6f6f6;
+	-ios-normal-background-alpha: 1.0v;
+
+	-ios-selected-background-color: #1c91e0;
+	-ios-selected-background-alpha: 1.0;
+
+	-ios-newcomer-background-color: #fff314;    
+	-ios-newcomer-background-aplha: 1.0;    
+
+    -ios-text-color: #000000;
+    -ios-highlight-text-color: #ffffff;
+    -ios-status-message-text-color: #71712a;
+    -ios-status-message-text-edgeinsets: 5px 10px 0px 5px;    /* top, left, bottom, right */
+    -ios-status-message-background-image: url('pop_status.png') 17px 0px;
+}
+
+TableViewCellStyle2-1 /* Chat */
+{
+	border-color: #d4d4cd;
+	-ios-normal-background-color: #f6f6f6;
+	-ios-normal-background-alpha: 1.0;
+
+	-ios-selected-background-color: #1c91e0;
+	-ios-selected-background-alpha: 1.0;
+
+    -ios-text-color: #000000;
+    -ios-highlight-text-color: #ffffff;
+    -ios-detail-text-color: #3382b7;    /* last message */
+}
+
+TableViewCellStyle4-1 /* Recommendees */
+{
+	border-color: #d4d4cd;
+	-ios-normal-background-color: #f6f6f6;
+	-ios-normal-background-alpha: 1.0;
+
+	-ios-selected-background-color: #1c91e0;
+	-ios-selected-background-alpha: 1.0;
+
+    -ios-text-color: #000000;  
+    -ios-highlight-text-color: #ffffff;         
+    -ios-detail-text-color: #71712a; 
+}
+
+TableViewCellStyle4-2 /* MemberCell */
+{
+	-ios-normal-background-color: #e5e0c0;
+	-ios-normal-background-alpha: 0.3;
+
+    -ios-text-color: #000000;           
+    -ios-detail-text-color: #3382b7; 
+}
+
+TableViewSectionHeaderStyle1 /* friends */
+{
+    /* use only one which either color or image. if use both, image will show only. */
+    /* background-color: #ffffff; */
+    -ios-text-color: #71712a;
+    -ios-text-shadow-color: #ffffff;
+    -ios-text-shadow-alpha: 0.7;
+    -ios-text-margin: 15px 0px;
+    -ios-background-image: url('bg_friends_section_title.png');
+}
+
+TableViewSectionHeaderStyle2 /* Recommendees */
+{
+    /* use only one which either color or image. if use both, image will show only. */
+    /* background-color: #ffffff; */
+    -ios-text-color: #71712a;
+    -ios-text-shadow-color: #ffffff;
+    -ios-text-shadow-alpha: 0.7;
+    -ios-text-margin: 15px 0px;
+    -ios-background-image: url('bg_friends_section_title.png');
+}
+
+/* NavigationBar */
+
+NavigationBarStyle1
+{
+	background-color: #000000;
+	-ios-background-image: url('bg_header.png');
+}
+
+NavigationItemTitleStyle1
+{
+    -ios-text-color: #ffffff;
+    -ios-text-shadow-offset: 0px -1px;
+    -ios-text-shadow-color: #000000;
+    -ios-text-shadow-alpha: 0.7;
+}
+
+/* MiniProfile Style Starts */
+MiniProfileBackgroundStyle1
+{
+    -ios-background-image: url('bg_profile.png');
+}
+
+MiniProfileMenuBarBackgroundStyle1
+{
+    -ios-background-image: url('bg_profile_bar.png');
+}
+
+MiniProfileUserNameLabelStyle1
+{
+    -ios-text-color: #000;
+    -ios-text-shadow-color: #ffffff;
+    -ios-text-shadow-alpha: 0.7;
+}
+
+MiniProfileStatusMessageLabelStyle1
+{
+    -ios-text-color: #71712a;      
+}
+
+MiniProfileButtonStyle1
+{
+    -ios-text-color: #ffffff;
+    -ios-text-shadow-color: #000;
+    -ios-text-shadow-offset: 0px -1px;
+    -ios-text-shadow-alpha: 0.5;
+    -ios-background-image: url('btn_profile.png');
+}
+
+MiniProfilePlusFriendHomeButtonStyle1
+{
+    -ios-text-color: #ffffff;
+    -ios-background-image: url('btn_plusfriend_visit_home.png');
+    -ios-arrow-icon-image: url('ico_plusfriend_arrow.png');
+}
+
+MiniProfilePhoneNumberButtonStyle1
+{
+    -ios-text-color: #384653;
+    -ios-background-image: url('btn_profile_call.png');
+}
+
+MiniProfilePlusFriendCountStyle1
+{ 
+    -ios-text-color: #384653;
+    -ios-background-image: url('bg_plusfriend_count.png') 10px 10px;
+}
+
+MiniProfileMenuBarAccessoryStyle1
+{
+    -ios-gift-icon-image: url('btn_profile_gift.png');
+    -ios-favorite-on-icon-image: url('btn_profile_favorite_on.png');
+    -ios-favorite-off-icon-image: url('btn_profile_favorite_off.png');    
+    -ios-edit-icon-image: url('btn_profile_edit.png');
+    -ios-close-icon-image: url('btn_profile_close.png');    
+}
+/* MiniPforile Style Ends */
+
+/* More Style Starts */
+MoreBackgroundStyle1
+{
+	background-color: #f6f6f6;
+}
+
+MoreCellStyle1
+{
+		border-color: #d4d4cd;
+    -ios-text-color: #000;
+    -ios-highlight-text-color: #ffffff;
+		-ios-normal-background-color: #f6f6f6;
+    -ios-selected-background-color: #1c91e0;        
+		-ios-normal-background-alpha: 1.0;
+    -ios-selected-background-alpha: 1.0;        
+}
+
+MoreIconSetStyle1
+{
+    -ios-account-icon-image: url('ico_more_account.png');
+    -ios-notice-icon-image: url('ico_more_notice.png');
+    -ios-settings-icon-image: url('ico_more_setting.png');
+    -ios-giftshop-icon-image: url('ico_more_giftshop.png');
+    -ios-itemstore-icon-image: url('ico_more_itemstore.png');
+    -ios-plusfriend-icon-image: url('ico_more_plusfriend.png');                    
+    -ios-gamecenter-icon-image: url('ico_more_game.png');
+}
+/* More Style Ends */
+
+/* Passcode Style Starts */
+PasscodeBackgroundStyle1
+{
+    background-color: #f6f6f6;
+}
+
+PasscodeTitleLabelStyle1
+{
+    -ios-text-color: #000;
+    -ios-text-shadow-offset: 0px 1px;
+		-ios-text-shadow-color: #ffffff;
+    -ios-text-shadow-alpha: 0.7;
+}
+
+PasscodeDescLabelStyle1
+{
+    -ios-text-color: #71712a;
+    -ios-text-shadow-offset: 0px 1px;
+	-ios-text-shadow-color: #ffffff;
+    -ios-text-shadow-alpha: 0.7;
+}
+
+PasscodeBulletAndKeypadStyle1
+{
+    -ios-bullet-image: url('img_passcode.png');
+    -ios-bullet-background-image: url('bg_passcode_input.png');
+   
+    -ios-keypad-number1-normal-image: url('keypad_n_1.png');
+    -ios-keypad-number2-normal-image: url('keypad_n_2.png');
+    -ios-keypad-number3-normal-image: url('keypad_n_3.png');
+    -ios-keypad-number4-normal-image: url('keypad_n_4.png');
+    -ios-keypad-number5-normal-image: url('keypad_n_5.png');
+    -ios-keypad-number6-normal-image: url('keypad_n_6.png');
+    -ios-keypad-number7-normal-image: url('keypad_n_7.png');
+    -ios-keypad-number8-normal-image: url('keypad_n_8.png');
+    -ios-keypad-number9-normal-image: url('keypad_n_9.png');
+    -ios-keypad-number0-normal-image: url('keypad_n_0.png');
+    -ios-keypad-back-normal-image: url('keypad_n_back.png');
+    -ios-keypad-cancel-normal-image: url('keypad_n_cancel.png');
+    -ios-keypad-blank-normal-image: url('keypad_n.png');
+
+    -ios-keypad-number1-highlight-image: url('keypad_p_1.png');
+    -ios-keypad-number2-highlight-image: url('keypad_p_2.png');
+    -ios-keypad-number3-highlight-image: url('keypad_p_3.png');
+    -ios-keypad-number4-highlight-image: url('keypad_p_4.png');
+    -ios-keypad-number5-highlight-image: url('keypad_p_5.png');
+    -ios-keypad-number6-highlight-image: url('keypad_p_6.png');
+    -ios-keypad-number7-highlight-image: url('keypad_p_7.png');
+    -ios-keypad-number8-highlight-image: url('keypad_p_8.png');
+    -ios-keypad-number9-highlight-image: url('keypad_p_9.png');
+    -ios-keypad-number0-highlight-image: url('keypad_p_0.png');
+    -ios-keypad-back-highlight-image: url('keypad_p_back.png');
+    -ios-keypad-cancel-highlight-image: url('keypad_p_cancel.png');
+    -ios-keypad-blank-highlight-image: url('keypad_p.png');
+}
+/* Passcode Style Ends */
+
+/* ChatInputBar Style Starts */
+ChatInputBarSendButtonNormalStyle1
+{
+    -ios-background-image: url('btn_chat_enable.png') 13px 0px;
+    -ios-text-color: #000;
+    -ios-text-alpha: 1.0;
+    -ios-text-shadow-alpha: 0.7;
+    -ios-text-shadow-color: #ffffff;
+    -ios-title-edgeinsets: 1px 1px 1px 1px;
+}
+
+ChatInputBarSendButtonDisabledStyle1
+{   
+    -ios-background-image: url('btn_chat_disable.png') 13px 0px;
+    -ios-text-color: #000;
+    -ios-text-alpha: 0.2;
+    -ios-text-shadow-alpha: 0.2;
+    -ios-text-shadow-color: #ffffff;
+    -ios-title-edgeinsets: 1px 1px 1px 1px;
+}
+
+ChatInputBarStyle1
+{
+    -ios-background-image: url('bg_chat_inputbar.png') 90px 15px;
+    -ios-plus-icon-image: url('btn_chat_addmedia.png');
+    -ios-emoticon-icon-image: url('btn_chat_emoticon.png');
+    -ios-keyboard-icon-image: url('btn_chat_keyboard.png');
+}
+/* ChatInputBar Style Ends */
+
+
+/* 내가 보낸 메시지(발신) 말풍선*/
+ChatMessageCellStyle1
+{
+	-ios-background-image: url('pop_yellow.png') 16px 15px;
+	-ios-selected-background-image: url('pop_blue.png') 16px 15px;
+	-ios-text-color: #000;
+	-ios-selected-text-color: #ffffff;
+	-ios-title-edgeinsets: 6px 10px 8px 14px;  /* top, left, bottom, right */
+	-ios-image-edgeinsets: 6px 6px 8px 10px;  /* top, left, bottom, right */
+	/* -ios-cell-vertical-margin: 19px; */
+}
+
+/* 내가 받은 메시지(수신) 말풍선*/
+ChatMessageCellStyle2
+{
+    -ios-background-image: url('pop_white.png') 19px 15px;
+    -ios-text-color: #000;
+    -ios-title-edgeinsets: 6px 14px 8px 10px;  /* top, left, bottom, right */
+    -ios-image-edgeinsets: 6px 10px 8px 6px;  /* top, left, bottom, right */
+    /* -ios-cell-vertical-margin: 19px; */
+}
+
+
+/* TabBarItem */
+TabBarTitleStyle1
+{
+	-ios-text-color: #ffffff;
+	-ios-text-alpha: 0.6;
+  -ios-text-shadow-offset: 0px 0px;
+	-ios-selected-text-color: #000;
+	-ios-selected-text-alpha: 1.0;
+  -ios-selected-text-shadow-offset: 0px 0px;
+}
+
+TabBarItemStyle1
+{ 
+		-ios-background-image: url('bg_tab_bar.png') 0px 0px;
+		-ios-selection-indicator-image: url('bg_tab_bar_highlight.png');
+
+  	-ios-friends-normal-icon-image: url('tab_icon_friends.png');
+  	-ios-chats-normal-icon-image: url('tab_icon_chats.png');
+  	-ios-recommendees-normal-icon-image: url('tab_icon_recommendees.png');
+  	-ios-more-normal-icon-image: url('tab_icon_more.png');
+
+  	-ios-friends-selected-icon-image: url('tab_icon_friends_highlight.png');
+  	-ios-chats-selected-icon-image: url('tab_icon_chats_highlight.png');
+  	-ios-recommendees-selected-icon-image: url('tab_icon_recommendees_highlight.png');
+  	-ios-more-selected-icon-image: url('tab_icon_more_highlight.png');
+}
+
+
+DefaultProfileStyle1
+{
+    -ios-profile-small-image: url('img_profile_default.png');
+    -ios-profile-large-image: url('img_mprofile_default.png');
+    -ios-groupchat-small-image: url('img_groupchat.png');
+}

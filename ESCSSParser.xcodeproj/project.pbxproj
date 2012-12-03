@@ -18,6 +18,8 @@
 		B1716C841651280300AC53B3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1716C831651280300AC53B3 /* Default-568h@2x.png */; };
 		B1716C8B1651283B00AC53B3 /* test.css in Resources */ = {isa = PBXBuildFile; fileRef = B1716C8A1651283B00AC53B3 /* test.css */; };
 		B1716C9216512ABB00AC53B3 /* ESCSSParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */; };
+		D34EC8F2166C936000083C32 /* test1.css in Resources */ = {isa = PBXBuildFile; fileRef = D34EC8F1166C936000083C32 /* test1.css */; };
+		D39AE864166C869C0028BBDD /* KakaoTalk.css in Resources */ = {isa = PBXBuildFile; fileRef = D39AE863166C869C0028BBDD /* KakaoTalk.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		B1716C8A1651283B00AC53B3 /* test.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = test.css; sourceTree = "<group>"; };
 		B1716C9016512ABB00AC53B3 /* ESCSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCSSParser.h; sourceTree = "<group>"; };
 		B1716C9116512ABB00AC53B3 /* ESCSSParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ESCSSParser.mm; sourceTree = "<group>"; };
+		D34EC8F1166C936000083C32 /* test1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = test1.css; sourceTree = "<group>"; };
+		D39AE863166C869C0028BBDD /* KakaoTalk.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = KakaoTalk.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		B1716C741651280300AC53B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D34EC8F1166C936000083C32 /* test1.css */,
+				D39AE863166C869C0028BBDD /* KakaoTalk.css */,
 				B1716C751651280300AC53B3 /* ESCSSParser-Info.plist */,
 				B1716C761651280300AC53B3 /* InfoPlist.strings */,
 				B1716C791651280300AC53B3 /* main.m */,
@@ -164,6 +170,8 @@
 				B1716C821651280300AC53B3 /* Default@2x.png in Resources */,
 				B1716C841651280300AC53B3 /* Default-568h@2x.png in Resources */,
 				B1716C8B1651283B00AC53B3 /* test.css in Resources */,
+				D39AE864166C869C0028BBDD /* KakaoTalk.css in Resources */,
+				D34EC8F2166C936000083C32 /* test1.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +255,7 @@
 		B1716C881651280300AC53B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESCSSParser/ESCSSParser-Prefix.pch";
 				INFOPLIST_FILE = "ESCSSParser/ESCSSParser-Info.plist";
@@ -258,6 +267,7 @@
 		B1716C891651280300AC53B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESCSSParser/ESCSSParser-Prefix.pch";
 				INFOPLIST_FILE = "ESCSSParser/ESCSSParser-Info.plist";
@@ -285,6 +295,7 @@
 				B1716C891651280300AC53B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
